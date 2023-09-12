@@ -9,7 +9,6 @@ body {
   line-height: 1.5;
   letter-spacing: -.2px;
   background-color: rgba(32,36,46,1);
-  /* background-image: url('../images/background.webp'); */
 }
 
 body, a, div, h1, h2, h3, header, footer, li, table, tr, td, tbody {
@@ -29,6 +28,14 @@ header {
   background-color: rgba(255, 255, 255, .21);
   text-align: center;
   color: #fff;
+}
+
+.marsbahis-center-img {
+  margin: 20px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
 }
 
 header > div {
@@ -124,3 +131,48 @@ main table td {
   vertical-align: middle
 }
 
+.registration, .sports, .marsbahis-links-image {
+  width: 250px;
+}
+
+.marsbahis-games {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.marsbahis-games > li {
+  width: 33%;
+}
+
+.marsbahis-image-container {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+
+@media (max-width: 1024px) {
+  .marsbahis-games > li {
+    width: 50%;
+  }
+
+  header > div {
+    width: 75%;
+  }
+}
+
+@media (max-width: 720px) {
+  .marsbahis-center-img, .marsbahis-games > li {
+    width: 100%;
+  }
+
+  .marsbahis-image-container {
+    flex-direction: column;
+  }
+
+  header > div {
+    flex-direction: column;
+  }
+}
